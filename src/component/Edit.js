@@ -9,7 +9,7 @@ function Edit(props) {
     const update = async () =>{
         try {
             const body = {name: `${name}`}
-            const response = await fetch(`http://localhost:5000/movies/${id}`,{
+            const response = await fetch(`http://localhost:5000/list/movies/${id}`,{
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

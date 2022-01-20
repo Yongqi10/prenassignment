@@ -10,7 +10,7 @@ function ADD() {
 
         try {
             const body = {name}
-            const response = await fetch("http://localhost:5000/movies/",{
+            const response = await fetch("http://localhost:5000/list/movies/",{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

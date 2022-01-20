@@ -1,8 +1,43 @@
-.width{
+body {
+  background: rgb(214, 167, 45);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 167, 45, 1) 1%,
+    rgba(47, 184, 75, 1) 48%,
+    rgba(0, 232, 255, 1) 94%
+  );
+}
+
+.width {
+  margin: 0 auto;
+  width: 1200px;
+  
+}
+.logout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnLogout{
+
     margin: 0 auto;
-    width: 1200px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+}
+
+.p-fix {
+  position: fixed; /* or absolute */
+  top: 25%;
+  left: 25%;
+}
+
+
+.btnRegister {
+  margin-left: 20px;
+}
+.btnLogin {
+  margin-left: 20px;
 }

@@ -11,7 +11,7 @@ function List() {
     
     const api = async () =>{
         try {
-            const response = await fetch('http://localhost:5000/movies/')
+            const response = await fetch('http://localhost:5000/list/movies/')
             const data = await response.json()
             setListMovie(data)
             setLoading(false)
@@ -31,7 +31,7 @@ function List() {
     <table className="table table-dark table-striped width">
         <thead>
             <tr>
-                <th scope="col">Name</th>
+                <th scope="col">Movie Name</th>
                 <th scope="col">Edit</th>
                 <th scope="col">DELETE</th> 
             </tr>

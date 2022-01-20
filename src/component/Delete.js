@@ -7,7 +7,7 @@ function Delete(props) {
     const deleteMovie = async (id) =>{
         try {
 
-            const response = await fetch(`http://localhost:5000/movies/${id}`,{
+            const response = await fetch(`http://localhost:5000/list/movies/${id}`,{
                 method: "delete"
             })
             window.location = "/List"
